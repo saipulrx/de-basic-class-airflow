@@ -1,0 +1,4 @@
+pandasql==0.7.3
+fastparquet==2024.5.0
+pyarrow==17.0.0
+jupyter==1.0.0

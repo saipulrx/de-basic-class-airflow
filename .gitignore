@@ -1,0 +1,9 @@
+dags/dataset/*.csv
+dags/dataset/*.csv.gz
+dags/dataset/*.parquet
+dags/dataset/*.pdf
+dags/script/__pycache__
+dags/__pycache__
+logs/*
+.vscode
+.DS_Store
