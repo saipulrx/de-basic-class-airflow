@@ -19,7 +19,7 @@ default_args = {
 
 def db_connection():
     # Konfigurasi database
-    db_uri = 'postgresql+psycopg2://postgres:12345@host.docker.internal:5432/demo_intro_sql'
+    db_uri = 'postgresql+psycopg2://postgres:12345@host.docker.internal:5432/de_mentor'
     #f'postgresql+psycopg2://{username}:{password}@{host}:{port}/{database}'
     # Buat engine SQLAlchemy
     engine = create_engine(db_uri)
@@ -43,7 +43,7 @@ def etl_data():
 
     #load data after transformation to postgresql
     TABLE_NAME = 'covid_idn_test'
-    df_idn.to_sql(name=TABLE_NAME, con=conn,index=False)
+    df_idn.to_sql(name=TABLE_NAME, con=conn,index=False,if_exists='replace')
     print(f'Total Record has been inserted are {count_data} to table {TABLE_NAME} ')
 
 def welcome():
