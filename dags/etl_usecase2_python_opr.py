@@ -62,6 +62,7 @@ def etl_data():
     TABLE_NAME = 'green_tripdata_zone_lookup1'
     df_join_table.to_sql(name=TABLE_NAME, con=conn, index=False,if_exists='replace')
     print(f'Total Record has been inserted are {count_data} to table {TABLE_NAME} ')
+    conn.close()
 
 def welcome():
     print('Welcome to Apache Airflow')
