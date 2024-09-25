@@ -5,7 +5,8 @@ This repository for course Data Engineer - Basic. In this course use tech stack 
 - Data Platform : OLTP(PostgreSQL)
 
 Prerequisite :
-- Already Install Docker Dekstop for Windows OS or any docker software for Linux/Mac Os
+- Already Install Docker Desktop for Windows OS or any docker software for Linux/Mac Os
+- Already install postgresql in local computer
 - Have knowledge Basic Docker & Docker Compose
 
 Step by step to run Apache Airflow with use Docker
