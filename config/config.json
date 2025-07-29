@@ -1,0 +1,8 @@
+{
+    "csv_file": "dags/dataset/owid-covid-data.csv",
+    "db_host": "host.docker.internal",
+    "db_name": "demo_intro_sql",
+    "db_user": "postgres",
+    "db_password": "postgres",
+    "db_port": 5432
+}
